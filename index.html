@@ -1,37 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="The personal portfolio of Chidiogo, a nursing student and aspiring web developer.">
         <title>Chidiogo | Personal Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section>
-        <h1>Hi, I am Chidiogo</h1>
-        <p>I am a Nursing student & an Aspiring web developer</p>
-        <p>I am learning to build beautiful websites</p>
-        </section>
-        <section>
-            <h2>About Me</h2>
-            <p>I am Chidiogo, a nursing student and aspiring web developer</p>
-            <p>I am currently learning web development and building my skills step by step</p>
-            <p>My goal is to become a full-stack web developer with strong skills in both frontend and backened development</p>
-        </section>
-        <section>
-            <h2>My Skills</h2>
-            <p>HTML</p>
-            <P>CSS</P>
-        </section>
-        <section>
-            <h2>My Projects</h2>
-            <p>Personal Portfolio</p>
-            <p>My Student Hub</p>
-        </section>
-        <section>
-            <h2>Contact Me</h2>
-<p>You can reach me through the platforms below</p>
-<p>Email: Chidiogouzor917@gmail.com</p>
-<p>GitHub: Chidiogouzor917-lgtm</p>
-<p>Linkedin: Veronica Uzor</p>
-        </section>
+        <header class="site-header">
+            <nav class="nav container" aria-label="Main navigation">
+                <a class="logo" href="#home" aria-label="Chidiogo home">C<span>.</span></a>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" id="home">
+                <div class="container hero-grid">
+                    <div class="hero-copy">
+                        <p class="eyebrow">Welcome to my creative corner</p>
+                        <h1>Hi, I am <span>Chidiogo</span></h1>
+                        <p class="hero-title">I am a Nursing Student &amp; Aspiring Web Developer</p>
+                        <p class="hero-intro">I am learning to build beautiful websites, combining curiosity, care, and creativity one project at a time.</p>
+                        <a class="button button-primary" href="#projects">View My Projects <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                    <div class="hero-art" aria-hidden="true">
+                        <div class="art-ring"></div>
+                        <div class="art-card">
+                            <span class="art-mark">&lt;/&gt;</span>
+                            <p>learning<br><strong>in progress</strong></p>
+                        </div>
+                        <span class="art-dot dot-one"></span>
+                        <span class="art-dot dot-two"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="about">
+                <div class="container section-grid">
+                    <div class="section-heading">
+                        <p class="eyebrow">A little about me</p>
+                        <h2>Learning with purpose.</h2>
+                    </div>
+                    <div class="about-copy">
+                        <p>I am Chidiogo, a nursing student and aspiring web developer.</p>
+                        <p>I am currently learning web development and building my skills step by step.</p>
+                        <p>My goal is to become a full-stack web developer with strong skills in both frontend and backend development.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-tint" id="skills">
+                <div class="container">
+                    <div class="section-heading centered">
+                        <p class="eyebrow">What I am learning</p>
+                        <h2>My skills</h2>
+                    </div>
+                    <div class="skills-grid">
+                        <article class="skill-card">
+                            <span class="skill-number">01</span>
+                            <div class="skill-icon">&lt;/&gt;</div>
+                            <h3>HTML</h3>
+                            <p>Building clear, meaningful page structures with semantic HTML.</p>
+                        </article>
+                        <article class="skill-card featured-skill">
+                            <span class="skill-number">02</span>
+                            <div class="skill-icon">{ }</div>
+                            <h3>CSS</h3>
+                            <p>Styling thoughtful, responsive interfaces with personality and care.</p>
+                        </article>
+                        <article class="skill-card">
+                            <span class="skill-number">03</span>
+                            <div class="skill-icon">JS</div>
+                            <h3>JavaScript</h3>
+                            <p>Learning to add useful interaction and bring websites to life.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="projects">
+                <div class="container">
+                    <div class="projects-top">
+                        <div class="section-heading">
+                            <p class="eyebrow">Things I am creating</p>
+                            <h2>My projects</h2>
+                        </div>
+                        <p class="section-note">Small steps, real practice, and a growing collection of work.</p>
+                    </div>
+                    <div class="projects-grid">
+                        <article class="project-card project-one">
+                            <div class="project-visual"><span>01</span><div class="mini-window"><i></i><i></i><i></i></div></div>
+                            <div class="project-info"><p class="project-label">Featured project</p><h3>Personal Portfolio</h3><p>A home for my story, skills, and creative progress.</p></div>
+                        </article>
+                        <article class="project-card project-two">
+                            <div class="project-visual"><span>02</span><div class="mini-window hub-window"><b></b><b></b><b></b></div></div>
+                            <div class="project-info"><p class="project-label">Learning project</p><h3>My Student Hub</h3><p>A project inspired by student life and the things I am learning.</p></div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section" id="contact">
+                <div class="container contact-inner">
+                    <div>
+                        <p class="eyebrow">Let&apos;s connect</p>
+                        <h2>Have a question?<br><em>I&apos;d love to hear from you.</em></h2>
+                    </div>
+                    <div class="contact-details">
+                        <p>You can reach me through the platforms below</p>
+                        <a href="mailto:Chidiogouzor917@gmail.com">Email: Chidiogouzor917@gmail.com</a>
+                        <a href="https://github.com/Chidiogouzor917-lgtm">GitHub: Chidiogouzor917-lgtm</a>
+                        <p>LinkedIn: Veronica Uzor</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p>&copy; 2024 Chidiogo. Built with care.</p>
+                <a href="#home">Back to top &uarr;</a>
+            </div>
+        </footer>
     </body>
 </html>
